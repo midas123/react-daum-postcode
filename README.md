@@ -20,7 +20,7 @@ class Postcode extends React.Component {
     let fullAddress = data.address;
     let extraAddress = ''; 
     
-    if (data.addressType === 'R') {
+    if (data.userSelectedType === 'R') {
       if (data.bname !== '') {
         extraAddress += data.bname;
       }
